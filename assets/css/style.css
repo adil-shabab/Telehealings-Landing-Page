@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header__section{
+    background-color: rgba(243, 243, 243, 0.479);
+    padding: 20px 0;
+    border-bottom: 1px solid #4183c42c;
+}
+.header__section .nav__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__section .nav__section img{
+    width: 200px;
+}
+.header__section .nav__section a{
+    font-family: "Syne", sans-serif;
+}
+.header__section .nav__section a button{
+    background-color: #4183c4;
+    color: white;
+    border: 1px solid #4183c4;
+    transition: 0.3s ease-in;
+    font-family: "Syne", sans-serif;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.header__section .nav__section a button:hover{
+    background-color: white;
+    color: #4183c4;
+}
+
+.hero__section{
+    padding: 70px 0px;
+    background-color: rgba(243, 243, 243, 0.479);
+}
+.hero__section h1.heading{
+    font-size: 35px;
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+}
+.hero__section p.description{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero__section .trust-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.hero__section .trust-container .trust-item {
+    min-width: 49%;
+    margin-bottom: 15px;
+    width: 49%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.hero__section .trust-container .trust-item:hover {
+    transform: translateY(-5px);
+}
+
+.hero__section .trust-container .trust-item .trust-icon {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #4183c4; /* Calm purple tone */
+}
+
+.hero__section .trust-container .trust-item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.hero__section .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 0px;
+}
+
+.hero__section .buttons a button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Syne", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero__section .buttons .first_btn {
+    background-color: #4183c4;
+    color: white;
+}
+
+.hero__section .buttons .first_btn:hover {
+    background-color: #39638d;
+}
+
+.hero__section .buttons .second_btn {
+    background-color: #e0e7ff;
+    color: #312e81;
+}
+
+.hero__section .buttons .second_btn:hover {
+    background-color: #c7d2fe;
+}
+.hero__section img{
+    border-radius: 10px;
+}
+
+.emotional_plan{
+    padding: 45px 0px;
+}
+.emotional_plan .heading{
+    font-family: "Syne", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.emotional_plan .description{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.emotional_plan .bx__icon{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 15px;
+    gap: 8px;
+    border-radius: 10px;
+}
+.emotional_plan .bx__icon span{
+    font-size: 17px;
+    font-family: 'Syne', sans-serif;
+}
+.emotional_plan .bx__icon img{
+    width: 65px;
+}
+.support-quote {
+  font-family: "Syne", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #444;
+  font-weight: 600;
+  background-color: #f3f4f6; /* soft gray background */
+  padding: 15px 20px;
+  border-left: 5px solid #4183c4; /* calming purple accent */
+  margin: 35px auto 0px;
+  border-radius: 6px;
+  max-width: fit-content;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.form__section{
+    background-color: rgba(243, 243, 243, 0.479);
+    padding: 60px 0px 60px 0px;
+}
+.form__section form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #4183c449;
+    border-radius: 8px;
+}
+.form__section .input__box{
+    width: 50%;
+    padding: 22px;
+}
+.form__section .input__box h5{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: "Syne", sans-serif;
+}
+.form__section .input__box input{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    padding: 9px 10px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.form__section .input__box textarea{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    padding: 9px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    min-height: 100px;
+    outline: none;
+}
+.form__section .input__box button{
+    padding: 12px 24px;
+    background-color: #4183c4;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Syne", sans-serif;
+    cursor: pointer;
+}
+.form__section .img__box{
+    width: 50%;
+}
+.form__section .img__box img{
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.cta__section{
+    padding: 0px 0px 25px 0px;
+}
+.cta__section .cta__box{
+    background-color: #4183c4;
+    display: flex;
+    padding: 40px 0px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cta__section .cta__box h4{
+    font-weight: 600;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+}
+.cta__section .cta__box p{
+    color: white;
+    font-size: 17px;
+}
+.cta__section .cta__box .labels{
+    display: flex;
+    gap: 20px;
+}
+.cta__section .cta__box .labels div{
+    display: flex;
+    gap: 8px;
+}
+.cta__section .cta__box .labels div img{
+    width: 20px;
+    height: 20px;
+}
+.cta__section .cta__box .labels span{
+    color: white;
+}
+.cta__section .cta__box button{
+    padding: 12px 24px;
+    background-color: #4183c4;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Syne", sans-serif;
+    cursor: pointer;
+}
+
+.benefits__section{
+    padding: 40px 0px;
+}
+.benefits__section h4{
+    font-family: "Syne", sans-serif;
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+.benefits__section .bx___box{
+    background-color: #4183c4;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 0px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+.benefits__section .bx___box img{
+    width: 60px;
+}
+.benefits__section .bx___box span{
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+}
+
+
+.how-it-works {
+  background-color: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+}
+.how-it-works .download__app{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.how-it-works .download__app img{
+    width: 150px;
+    border-radius: 5px;
+}
+.how-it-works .how-title {
+  font-size: 28px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #2d2d2d;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  flex: 1 1 280px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #4183c4;
+}
+
+.step-card h3 {
+  font-size: 20px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+
+.step-card p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 15px;
+  font-family: "Syne", sans-serif;
+}
+
+.app-badges img {
+  height: 40px;
+  margin: 5px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.app-badges img:hover {
+  transform: scale(1.05);
+}
+
+.services___section{
+    padding: 50px 0px 65px 0px;
+}
+.services___section h4{
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.services___section .img_box{
+    position: relative;
+    border-radius: 10px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.services___section .img_box img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+}
+.services___section .img_box::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    content: '';
+    z-index: 11;
+}
+.services___section .img_box h6{
+    position: absolute;
+    bottom: 8px;
+    color: white;
+    text-align: center;
+    z-index: 111;
+    font-size: 18px;
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+}
+
+.faq-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: "Syne", sans-serif;
+  list-style: none;
+  position: relative;
+}
+
+.faq-list summary::marker {
+  display: none;
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+  color: #4183c4;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  font-size: 24px;
+  color: #4183c4;
+}
+
+.faq-list details p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.testimonials-carousel {
+  background-color: #f9fafb;
+  padding: 60px 0px 60px;
+  border-top: 1px solid #4183c434;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-quote {
+  font-size: 16px;
+  color: #374151;
+  font-style: italic;
+  line-height: 1.6;
+  font-family: "Georgia", serif;
+  margin-bottom: 20px;
+}
+
+.testimonial-meta strong {
+  font-size: 16px;
+  color: #4183c4;
+  display: block;
+  font-family: "Syne", sans-serif;
+}
+
+.testimonial-meta span {
+  font-size: 14px;
+  color: #6b7280;
+  font-family: "Syne", sans-serif;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4183c4;
+}
+.testimonials-carousel .swiper-button-next{
+    bottom: 0;
+    z-index: 11111;
+    top: unset;
+    left: 51%;
+    transform: translate(-50%, 0);
+    font-size: 11px;
+}
+.testimonials-carousel .swiper-button-prev{
+    bottom: 0;
+    z-index: 11111;
+    top: unset;
+    left: 48%;
+    transform: translate(-50%, 0);
+    font-size: 11px;
+}
+.testimonials-carousel .swiper-button-next:after, .testimonials-carousel .swiper-button-prev:after{
+    font-size: 25px;
+}
+.testimonials-carousel .testimonial-swiper{
+    padding-bottom: 70px !important;
+}
+
+.doctors-section {
+  background-color: rgba(243, 243, 243, 0.479);
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.doctors-title {
+  font-size: 32px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.doctor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.doctor-card {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-photo {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+  color: #4183c4;
+  margin-bottom: 5px;
+}
+
+.doctor-speciality {
+  font-size: 14px;
+  color: #6b7280;
+  font-family: "Syne", sans-serif;
+}
+
+
+
+.ct_a__section{
+    background: #4183c4;
+    padding: 50px 0;
+}
+.ct_a__section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ct_a__section h3{
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-size: 35px;
+}
+.ct_a__section p{
+    color: white;
+    font-size: 18px;
+}
+.ct_a__section button{
+    background-color: white;
+    color: #4183c4;
+    border: 1px solid white;
+    transition: 0.3s ease-in;
+    font-family: "Syne", sans-serif;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+
+.site-footer {
+  background-color: #f3f4f6;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  color: #374151;
+  border-top: 1px solid #e5e7eb;
+}
+
+.site-footer img{
+    width: 190px;
+    margin-bottom: 20px;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6d28d9;
+  margin-bottom: 5px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .header__section .nav__section img{
+        width: 160px;
+    }
+
+    .header__section .nav__section a button{
+        padding: 10px 15px;
+    }
+
+    .hero__section{
+        padding: 40px 0px;
+    }
+    .hero__section h1.heading{
+        font-size: 30px;
+    }
+    .hero__section p.description{
+        font-size: 17px;
+    }
+
+    .hero__section .buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hero__section .buttons a button {
+        width: 100%;
+    }
+
+
+    .hero__section img{
+        margin-bottom: 20px;
+    }
+    .emotional_plan{
+        padding: 40px 0px;
+    }
+    .emotional_plan .heading{
+        font-size: 25px;
+    }
+    .emotional_plan .description{
+        font-size: 15px;
+    }
+    .emotional_plan .bx__icon{
+        margin-bottom: 20px;
+    }
+    .emotional_plan .bx__icon span{
+        width: 100%;
+        text-align: center;
+    }
+
+    .support-quote {
+        margin: 25px auto 0px;
+    }
+
+    .form__section{
+        padding: 40px 0px 40px 0px;
+    }
+    .form__section form{
+        flex-direction: column;
+    }
+    .form__section .input__box{
+        width: 100%;
+        padding: 22px;
+    }
+
+    .form__section .img__box{
+        width: 100%;
+    }
+    .form__section .img__box img{
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+
+    .cta__section{
+        padding: 0px 0px 25px 0px;
+    }
+    .cta__section .cta__box{
+        padding: 40px 20px;
+    }
+    .cta__section .cta__box h4{
+        text-align: center;
+        font-size: 28px;
+    }
+    .cta__section .cta__box p{
+        text-align: center;
+    }
+    .cta__section .cta__box .labels{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .benefits__section{
+        padding: 40px 0px;
+    }
+    .benefits__section h4{
+        font-size: 25px;
+    }
+    .benefits__section .bx___box{
+        min-height: 140px;
+        padding: 25px 20px;
+    }
+    .benefits__section .bx___box img{
+        width: 40px;
+    }
+    .benefits__section .bx___box span{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .how-it-works {
+        padding: 40px 0px;
+    }
+    .how-it-works .download__app{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .how-it-works .download__app img{
+        width: 150px;
+        border-radius: 5px;
+    }
+    .how-it-works .how-title {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    .steps-wrapper {
+        gap: 20px;
+    }
+    .services___section{
+        padding: 40px 0px 55px 0px;
+    }
+    .services___section h4{
+        font-size: 25px;
+    }
+
+    .faq-section {
+        padding: 40px 0px;
+    }
+
+    .faq-title {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .testimonials-carousel {
+        padding: 40px 0px 40px;
+    }
+
+    .testimonials-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials-carousel .swiper-button-next{
+        left: 53%;
+    }
+    .testimonials-carousel .swiper-button-prev{
+
+        left: 46%;
+    }
+    .swiper-backface-hidden .swiper-slide{
+        min-height: 200px;
+    }
+    .testimonials-carousel .testimonial-swiper{
+        padding-bottom: 60px !important;
+    }
+    .doctors-section {
+        padding: 40px 0px;
+    }
+    .doctors-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .doctor-grid {
+        gap: unset;
+        justify-content: space-between;
+    }
+    .doctor-card {
+        border-radius: 7px;
+        padding: 10px;
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    .doctor-photo {
+        height: 150px;
+    }
+
+    .doctor-name {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .ct_a__section{
+        padding: 40px 0;
+    }
+    .ct_a__section h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .ct_a__section p{
+        font-size: 17px;
+        text-align: center;
+    }
+
+}
