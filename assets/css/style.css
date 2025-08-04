@@ -404,6 +404,7 @@
     position: relative;
     border-radius: 10px;
     margin-top: 12px;
+    cursor: pointer;
     overflow: hidden;
 }
 .services___section .img_box img{
@@ -422,15 +423,29 @@
     content: '';
     z-index: 11;
 }
-.services___section .img_box h6{
+.services___section .img_box .txt__view{
     position: absolute;
-    bottom: 8px;
+    padding: 0px 10px;
+    z-index: 111;
+    transition: 0.4s ease;
+    top: 88%;
+}
+.services___section .img_box:hover .txt__view{
+    top: 30%;
+}
+.services___section .img_box .txt__view h6{
     color: white;
     text-align: center;
-    z-index: 111;
     font-size: 18px;
     width: 100%;
     font-family: 'Syne', sans-serif;
+}
+.services___section .img_box .txt__view p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .faq-section {
